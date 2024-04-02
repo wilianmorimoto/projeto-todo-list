@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="bg-img"></div>
+
+  <main>
+    <div class="header">
+      <h1>Todo</h1>
+      <div class="icon-theme"></div>
+    </div>
+
+    <div class="container">
+      <div class="new-todo">
+        <input type="text" name="new-todo" id="new-todo" placeholder="Create a new todo..." autocomplete="off">
+        <input id="add-todo" type="button" value="Add">
+      </div>
+
+      <div class="list">
+        <ul>
+          <li>
+            <div class="circle"></div>
+            <p class="paragraph">Complete online JavaScript course</p>
+            <img src="images/icon-cross.svg" alt="Close icon">
+          </li>
+          <li>
+            <div class="circle"></div>
+            <p class="paragraph">Complete Todo App on Frontend Mentor</p>
+            <img src="images/icon-cross.svg" alt="Close icon">
+          </li>
+        </ul>
+
+        <div class="items-left">
+          <p><span id="items-left"></span> items left</p>
+          <a id="clear-completed" href="#">Clear Completed</a>
+        </div>
+        
+        <div class="all-active">
+          <a class="btn-selected" id="all-btn" href="#">All</a>
+          <a id="active-btn" href="#">Active</a>
+          <a id="completed-btn" href="#">Completed</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/wilianmorimoto" target="_blank">Wilian Morimoto</a>.
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
